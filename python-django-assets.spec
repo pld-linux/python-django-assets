@@ -32,7 +32,7 @@ merging, minifying and compiling CSS and Javascript files.
 %setup -q -n %{module}-%{version}
 
 %build
-%{__python} setup.py build
+%py_build
 
 %if %{with tests}
 # Unittests can't be run yet: https://github.com/miracle2k/django-assets/issues/10
@@ -46,10 +46,7 @@ rm -r html/.{doctrees,buildinfo}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--skip-build \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/tests
 
