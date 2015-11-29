@@ -17,7 +17,7 @@ BuildRequires:	python-django
 BuildRequires:	python-nose
 BuildRequires:	python-webassets >= 0.8
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	sphinx-pdg
 Requires:	python-django
 Requires:	python-webassets >= 0.8
