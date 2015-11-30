@@ -6,7 +6,7 @@
 Summary:	Asset management for Django, to compress and merge CSS and Javascript files
 Name:		python-%{module}
 Version:	0.8
-Release:	3
+Release:	4
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
@@ -18,7 +18,7 @@ BuildRequires:	python-nose
 BuildRequires:	python-webassets >= 0.8
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.710
-BuildRequires:	sphinx-pdg
+BuildRequires:	sphinx-pdg-2
 Requires:	python-django
 Requires:	python-webassets >= 0.8
 BuildArch:	noarch
@@ -40,7 +40,7 @@ merging, minifying and compiling CSS and Javascript files.
 %endif
 
 # generate html docs
-sphinx-build docs html
+sphinx-build-2 docs html
 # remove the sphinx-build leftovers
 rm -r html/.{doctrees,buildinfo}
 
