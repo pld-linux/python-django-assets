@@ -2,15 +2,15 @@
 # Conditional build:
 %bcond_with	tests	# do not perform "make test"
 
-%define 	module	django-assets
+%define		module	django-assets
 Summary:	Asset management for Django, to compress and merge CSS and Javascript files
 Name:		python-%{module}
-Version:	0.8
-Release:	4
+Version:	0.11
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	2c7f3876420f825aa39f9bbfe5f7f95d
+# Source0-md5:	8210a76a9e65cdfd1c4679c8890f580d
 URL:		http://github.com/miracle2k/django-assets
 BuildRequires:	python-devel
 BuildRequires:	python-django
@@ -47,8 +47,6 @@ rm -r html/.{doctrees,buildinfo}
 %install
 rm -rf $RPM_BUILD_ROOT
 %py_install
-
-%{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/tests
 
 %py_postclean
 
