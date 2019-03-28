@@ -5,12 +5,12 @@
 %define		module	django-assets
 Summary:	Asset management for Django, to compress and merge CSS and Javascript files
 Name:		python-%{module}
-Version:	0.11
-Release:	2
+Version:	0.12
+Release:	1
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
-# Source0-md5:	8210a76a9e65cdfd1c4679c8890f580d
+# Source0-md5:	8360d0f615bb68391ecf2fde38e34ec1
 URL:		http://github.com/miracle2k/django-assets
 BuildRequires:	python-devel
 BuildRequires:	python-django
