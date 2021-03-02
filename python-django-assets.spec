@@ -6,7 +6,7 @@
 Summary:	Asset management for Django, to compress and merge CSS and Javascript files
 Name:		python-%{module}
 Version:	0.12
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://pypi.python.org/packages/source/d/%{module}/%{module}-%{version}.tar.gz
